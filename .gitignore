@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# native
+android/
+ios/
+*.keystore
+*.jks
+google-services.json
+GoogleService-Info.plist
+
+# secrets / environment — never commit these
+.env
+.env.*
+*.pem
+*.key
+secrets/
+**/secret*.txt
+
+# logs & misc
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.DS_Store
+*.orig.*
+
+# Supabase CLI local temp
+supabase/.temp/

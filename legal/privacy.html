@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medication-AI — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#ffffff; color:#1f1f1f; font:14px/1.5 'Roboto', system-ui, Arial, sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  h1 { font-family:'Roboto Mono', monospace; font-size:21px; font-weight:500; letter-spacing:.2px; margin:0 0 3px; }
+  .updated { color:#777; font-size:12.5px; margin-bottom:18px; }
+  h2 { font-family:'Roboto Mono', monospace; font-size:13.5px; font-weight:500; text-transform:uppercase; letter-spacing:.4px; color:#111; margin:22px 0 5px; }
+  h3 { font-size:13px; font-weight:700; color:#333; margin:13px 0 3px; }
+  p, li { color:#333; margin:5px 0; }
+  ul { padding-left:18px; margin:5px 0; }
+  li { margin:2px 0; }
+  a { color:#0b5ed7; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  hr { border:none; border-top:1px solid #e5e5e5; margin:18px 0; }
+  .note { background:#f6f6f6; border-left:3px solid #999; border-radius:3px; padding:9px 12px; margin:12px 0; font-size:13px; color:#222; }
+  b { font-weight:700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Medication-AI — Privacy Policy</h1>
+  <div class="updated">Last updated: 24 June 2026</div>
+
+  <p>Medication-AI ("Medication-AI", "we", "us", or "our") provides a mobile application that scans handwritten prescriptions, organises your medicines, and reminds you to take them. This Privacy Policy explains what information we collect, how we use it, and the choices you have. By using Medication-AI, you agree to this Policy. If you do not agree, please do not use the app.</p>
+
+  <hr>
+  <h2>1. Who we are</h2>
+  <p>Medication-AI is operated by the Medication-AI team. For any privacy question or request, contact us at <a href="mailto:adityavalaki1110@gmail.com">adityavalaki1110@gmail.com</a>.</p>
+
+  <h2>2. Information we collect</h2>
+  <p>We only collect what the app needs to work.</p>
+  <h3>a) Account information</h3>
+  <ul>
+    <li>If you sign in with <b>Google</b>, we receive your <b>name</b> and <b>email address</b> from Google.</li>
+    <li>If you continue as a <b>guest</b>, we create an anonymous account tied to your device; we do not collect your name or email.</li>
+  </ul>
+  <h3>b) Health and medication information you provide</h3>
+  <ul>
+    <li>Photographs of prescriptions you scan or upload.</li>
+    <li>Medicine names, strengths, forms, dosage schedules, durations, and instructions.</li>
+    <li>Your medication adherence (doses marked taken, snoozed, or skipped).</li>
+    <li>Profile details you enter: age, gender, and meal times.</li>
+  </ul>
+  <h3>c) Emergency (SOS) contacts</h3>
+  <ul><li>Names, relationships, and phone numbers of contacts you choose to add.</li></ul>
+  <h3>d) Technical and usage information</h3>
+  <ul><li>Limited scan-usage logs (a per-user identifier and timestamps) used to enforce fair-use limits and keep the service running. We do <b>not</b> use advertising identifiers and do <b>not</b> track you across other apps or websites.</li></ul>
+  <p>We do <b>not</b> collect your location, contacts list, microphone audio, or browsing history.</p>
+
+  <h2>3. How we use your information</h2>
+  <ul>
+    <li>Read your prescription and turn it into a structured medicine list (see Section 4).</li>
+    <li>Save your medicines, schedule, and reminders, and sync them to your account.</li>
+    <li>Send you on-device reminders/alarms to take your medicines.</li>
+    <li>Let you call your emergency contacts.</li>
+    <li>Protect the service from abuse (rate limiting) and fix problems.</li>
+  </ul>
+  <p>We do <b>not</b> sell your personal information and do <b>not</b> use your health data for advertising.</p>
+
+  <h2>4. AI processing of prescriptions</h2>
+  <p>To read a prescription, the photo is sent securely to our server, which forwards it to <b>Google's Gemini API</b> for text extraction. Google processes the image to return the medicine details and acts as our processor for this step. We do not send your name, email, or contacts to the AI — only the prescription image. The extracted result is shown to you for review and correction before anything is saved.</p>
+  <div class="note">AI extraction can be inaccurate. Always check the medicines and doses before saving, and confirm with your doctor or pharmacist.</div>
+
+  <h2>5. How your information is stored and secured</h2>
+  <ul>
+    <li>Stored using <b>Supabase</b> (database, authentication, file storage) on secured cloud infrastructure.</li>
+    <li>Encrypted <b>in transit</b> (HTTPS/TLS) and <b>at rest</b>.</li>
+    <li>Protected by <b>row-level security</b> — your data is accessible only to your own authenticated account.</li>
+    <li>Prescription images are kept in a <b>private storage area</b> scoped to your account.</li>
+    <li>Our AI key and server credentials are held <b>only on the server</b>, never inside the app.</li>
+  </ul>
+  <p>No method of transmission or storage is 100% secure, but we take reasonable measures to protect your information.</p>
+
+  <h2>6. Who we share information with</h2>
+  <ul>
+    <li><b>Supabase</b> — database, authentication, and file storage.</li>
+    <li><b>Google</b> — Google Sign-In (if you choose it) and the Gemini API (prescription reading).</li>
+  </ul>
+  <p>We may disclose information if required by law, or to protect the rights, safety, and security of our users and the service. We do not share your information with advertisers.</p>
+
+  <h2>7. Your choices and rights</h2>
+  <ul>
+    <li><b>Access &amp; correction:</b> view and edit your medicines, profile, and contacts in the app anytime.</li>
+    <li><b>Deletion:</b> delete medicines and contacts in the app. To delete your entire account and data, email <a href="mailto:adityavalaki1110@gmail.com">adityavalaki1110@gmail.com</a>.</li>
+    <li><b>Guest data:</b> tied to your device session; signing out or uninstalling may make it unrecoverable.</li>
+    <li><b>Notifications:</b> turn reminders on/off per medicine, and control notification permissions in device settings.</li>
+  </ul>
+
+  <h2>8. Data retention</h2>
+  <p>We keep your information for as long as your account is active or as needed to provide the service. When you delete your account, we delete your personal data, except where we must retain limited records to comply with legal obligations.</p>
+
+  <h2>9. Children's privacy</h2>
+  <p>Medication-AI is not directed to children under 13, and we do not knowingly collect their personal information. If a minor uses Medication-AI, it should be under the supervision of a parent or guardian.</p>
+
+  <h2>10. International users</h2>
+  <p>Your information may be processed on servers located outside your country. By using Medication-AI, you consent to such processing in accordance with this Policy.</p>
+
+  <h2>11. Changes to this Policy</h2>
+  <p>We may update this Policy from time to time. We will revise the "Last updated" date and, for material changes, provide additional notice in the app.</p>
+
+  <h2>12. Contact us</h2>
+  <p>Questions or requests: <a href="mailto:adityavalaki1110@gmail.com">adityavalaki1110@gmail.com</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+  "expo": {
+    "name": "Medication AI",
+    "slug": "medira",
+    "version": "1.0.0",
+    "icon": "./assets/icon.png",
+    "orientation": "portrait",
+    "scheme": "medira",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f4c9457f-7516-4512-aa3d-04fcf71e20eb",
+      "fallbackToCacheTimeout": 0
+    },
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B3F46"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.adityavalaki.medira",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.adityavalaki.medira",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B3F46"
+      },
+      "permissions": [
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.READ_CALENDAR",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Medication AI needs access to your photos so you can pick a prescription to scan.",
+          "cameraPermission": "Medication AI needs your camera to photograph a prescription."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#0E7C86",
+          "sounds": [
+            "./assets/sounds/classic.wav",
+            "./assets/sounds/siren.wav",
+            "./assets/sounds/urgent.wav",
+            "./assets/sounds/chirp.wav",
+            "./assets/sounds/doorbell.wav",
+            "./assets/sounds/arcade.wav",
+            "./assets/sounds/chime.wav",
+            "./assets/sounds/marimba.wav",
+            "./assets/sounds/bells.wav",
+            "./assets/sounds/sunrise.wav",
+            "./assets/sounds/pulse.wav"
+          ]
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Medication AI adds a doctor-visit reminder to your calendar before your medicine runs out."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Medication AI uses your camera to photograph a prescription for scanning.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "@react-native-google-signin/google-signin",
+      "./plugins/withMediraAlarm",
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f4c9457f-7516-4512-aa3d-04fcf71e20eb"
+      }
+    }
+  }
+}
